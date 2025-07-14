@@ -97,7 +97,7 @@ const ListadoUsuarios = () => {
     }
 
     if (usuario?.tipo.toLowerCase() !== "admin") {
-      navigate('/Inicio');
+      navigate('/IniciarSesion');
       return;
     }
   }, [autenticado, usuario, navigate]); 
