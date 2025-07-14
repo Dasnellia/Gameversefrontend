@@ -1,0 +1,265 @@
+:root {
+    --primary-color: #d10000;
+    --dark-color: #121212;
+    --light-dark: #1e1e1e;
+    --text-light: #f8f9fa;
+    --text-muted: #fdfdfd1e;
+}
+
+#detalle-juego-modal .modal-backdrop.show {
+    opacity: 0.8 !important;
+}
+
+#detalle-juego-modal .custom-backdrop {
+    background-color: var(--light-dark) !important;
+    color: var(--text-light) !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    border: 1px solid #333 !important;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4) !important;
+    border-radius: 0.5rem !important;
+    max-width: 95vw;
+    width: 100%;
+}
+
+#detalle-juego-modal .custom-modal-header {
+    background-color: var(--dark-color) !important;
+    border-bottom: 1px solid var(--primary-color) !important;
+    color: var(--text-light) !important;
+    padding: 1rem 1.5rem !important;
+    border-color: #555;
+}
+
+#detalle-juego-modal .custom-modal-header .btn-close {
+    filter: invert(1) grayscale(1) brightness(2) !important;
+    opacity: 0.7 !important;
+}
+
+#detalle-juego-modal .custom-modal-header .btn-close:hover {
+    opacity: 1 !important;
+}
+
+#detalle-juego-modal .custom-modal-title {
+    color: var(--primary-color) !important;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#detalle-juego-modal .custom-modal-body {
+    background-color: var(--light-dark) !important;
+    padding: 1.5rem !important;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#detalle-juego-modal .custom-iframe {
+    border: 1px solid #333;
+    border-radius: 0.3rem;
+}
+
+#detalle-juego-modal .custom-gallery-title,
+#detalle-juego-modal .custom-description-title,
+#detalle-juego-modal .custom-release-date-title,
+#detalle-juego-modal .custom-platforms-title,
+#detalle-juego-modal .custom-features-title,
+#detalle-juego-modal .custom-genres-title,
+#detalle-juego-modal .custom-reviews-title {
+    color: var(--primary-color) !important;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+#detalle-juego-modal .custom-reviews-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+#detalle-juego-modal .custom-description-text,
+#detalle-juego-modal .custom-release-date-text {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+#detalle-juego-modal .badge.bg-secondary {
+    background-color: #555 !important;
+    color: var(--text-light) !important;
+    font-size: 0.85rem;
+    padding: 0.4em 0.8em;
+    border-radius: 0.25rem;
+}
+
+#detalle-juego-modal .badge.bg-info {
+    background-color: #0d6efd !important;
+    color: var(--text-light) !important;
+    font-size: 0.85rem;
+    padding: 0.4em 0.8em;
+    border-radius: 0.25rem;
+}
+
+#detalle-juego-modal .custom-features-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#detalle-juego-modal .custom-feature-item {
+    color: var(--text-light);
+    margin-bottom: 0.3rem;
+}
+
+#detalle-juego-modal .custom-feature-item::before {
+    content: "\2022";
+    color: var(--primary-color);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#detalle-juego-modal .custom-price-text {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#detalle-juego-modal .custom-discount-text {
+    color: var(--primary-color) !important;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+#detalle-juego-modal .custom-add-to-cart-button {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: var(--text-light) !important;
+    font-weight: bold;
+    padding: 0.7rem 1.5rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#detalle-juego-modal .custom-add-to-cart-button:hover {
+    background-color: #b00000 !important;
+    border-color: #b00000 !important;
+}
+
+#detalle-juego-modal .custom-review-card {
+    background-color: var(--dark-color) !important;
+    border: 1px solid #333 !important;
+    color: var(--text-light) !important;
+    border-radius: 0.3rem;
+}
+
+#detalle-juego-modal .custom-review-user {
+    color: var(--primary-color) !important;
+    font-size: 1.1rem;
+}
+
+#detalle-juego-modal .custom-review-star {
+    color: #ffc107;
+    font-size: 1rem;
+    margin-right: 0.2rem;
+}
+
+#detalle-juego-modal .custom-review-text {
+    color: var(--text-light);
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+#detalle-juego-modal .custom-review-date {
+    color: var(--text-muted) !important;
+    font-size: 0.8rem;
+}
+
+#detalle-juego-modal .custom-add-review {
+    background-color: var(--dark-color);
+    border: 1px solid #333;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+
+#detalle-juego-modal .custom-add-review .form-label {
+    color: var(--text-light) !important;
+}
+
+#detalle-juego-modal .custom-rating-star {
+    color: #ffc107;
+    transition: transform 0.1s ease;
+    cursor: pointer;
+}
+
+#detalle-juego-modal .custom-rating-star:hover {
+    transform: scale(1.1);
+}
+
+#detalle-juego-modal .custom-review-textarea {
+    background-color: #333 !important;
+    border: 1px solid #444 !important;
+    color: var(--text-light) !important;
+    resize: vertical;
+}
+
+#detalle-juego-modal .custom-review-textarea::placeholder {
+    color: #bbb !important;
+}
+
+#detalle-juego-modal .custom-review-textarea:focus {
+    background-color: #444 !important;
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 0.25rem rgba(209, 0, 0, 0.25) !important;
+}
+
+#detalle-juego-modal .custom-submit-review-button {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: var(--text-light) !important;
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#detalle-juego-modal .custom-submit-review-button:hover {
+    background-color: #b00000 !important;
+    border-color: #b00000 !important;
+}
+
+#detalle-juego-modal .custom-submit-review-button:disabled {
+    background-color: #555 !important;
+    border-color: #555 !important;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+#detalle-juego-modal .modal-footer {
+    background-color: var(--dark-color) !important;
+    border-top: 1px solid #333 !important;
+    border-color: #555;
+}
+
+#detalle-juego-modal .modal-footer .btn-danger {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: var(--text-light) !important;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#detalle-juego-modal .modal-footer .btn-danger:hover {
+    background-color: #b00000 !important;
+    border-color: #b00000 !important;
+}
+
+#detalle-juego-modal .custom-image-thumbnail {
+    border: 1px solid #444;
+    border-radius: 0.25rem;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+#detalle-juego-modal .custom-image-thumbnail:hover {
+    border-color: var(--primary-color) !important;
+    transform: translateY(-2px);
+}
+
+.modal {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}

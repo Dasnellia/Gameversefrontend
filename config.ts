@@ -1,0 +1,1 @@
+export const URL_BACKEND = import.meta.env.VITE_URL_BACKEND || 'https://be-60j9.onrender.com'

@@ -1,0 +1,159 @@
+.recuperar-contenedor {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+}
+
+.recuperar-contenedor .fondo-animado {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle, #525252, #280101, #000000);
+}
+
+.recuperar-contenedor .fondo-animado::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 180deg,
+    transparent,
+    rgba(234, 0, 0, 0.1),
+    rgba(255, 89, 0, 0.2),
+    rgba(204, 0, 255, 0.15),
+    transparent
+  );
+  animation: auroraAnimation 10s linear infinite;
+  filter: blur(150px);
+  opacity: 0.8;
+  transform-origin: center center;
+}
+
+@keyframes auroraAnimation {
+  0% {
+    transform: rotate(0deg) translate(-25%, -25%);
+  }
+  50% {
+    transform: rotate(180deg) translate(-25%, -25%);
+  }
+  100% {
+    transform: rotate(360deg) translate(-25%, -25%);
+  }
+}
+
+.recuperar-contenedor .contenedor-principal {
+  max-width: 500px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  backdrop-filter: blur(5px);
+  z-index: 10; 
+}
+
+.recuperar-contenedor .logo-container {
+  margin-bottom: 20px;
+}
+
+.recuperar-contenedor .logo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.recuperar-contenedor .titulo-principal {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.recuperar-contenedor .descripcion {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.recuperar-contenedor .boton-enviar {
+  background-color: #ff0000c9 !important;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+.recuperar-contenedor .boton-enviar:hover {
+  background-color: #cc0000 !important;
+}
+
+.recuperar-contenedor .form-control {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-color: #555;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.recuperar-contenedor .form-control:focus {
+  border-color: #ff0000;
+  box-shadow: 0 0 0 0.25rem rgba(255, 0, 0, 0.25);
+}
+
+.recuperar-contenedor .form-label {
+  color: rgb(255, 255, 255) !important;
+}
+
+.recuperar-contenedor .form-text {
+  color: rgb(200, 200, 200) !important;
+}
+
+.recuperar-contenedor .form-select {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #555;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.recuperar-contenedor .form-select option {
+  color: black;
+  background-color: white;
+}
+
+@media (max-width: 480px) {
+  .recuperar-contenedor .contenedor-principal {
+    width: 90%;
+    padding: 30px 20px;
+    margin: 20px;
+  }
+
+  .recuperar-contenedor .titulo-principal {
+    font-size: 24px;
+  }
+
+  .recuperar-contenedor .descripcion {
+    font-size: 15px;
+  }
+
+  .recuperar-contenedor .logo {
+    width: 80px;
+    height: 80px;
+  }
+}

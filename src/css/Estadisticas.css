@@ -1,0 +1,78 @@
+:root {
+    --primary-color: #d10000;
+    --dark-color: #121212;
+    --light-dark: #1e1e1e;
+    --text-light: #f8f9fa;
+    --text-muted: #adb5bd;
+}
+
+body {
+    background-color: var(--dark-color);
+    color: var(--text-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+.salesChartContainer{
+    height: 300px;
+}
+
+.main-content {
+    transition: margin-left 0.3s ease;
+}
+
+.logo-icon {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.card {
+    background-color: var(--light-dark);
+    border: 1px solid #333;
+}
+
+.card-header {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #333;
+    font-weight: bold;
+}
+
+.stat-card {
+    border-left: 4px solid var(--primary-color);
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.alert-custom-restringido {
+  background-color: #320000;     /* rojo oscuro de fondo */
+  color: #ffdddd;                /* texto claro para contraste */
+  border: 1px solid #ff0000;     /* borde rojo brillante */
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  font-weight: 500;
+  max-width: 800px;
+  margin: 50px auto;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+.alert-custom-restringido h4 {
+  color: #ff4d4d;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.alert-custom-restringido p {
+  color: #ffcccc;
+  font-size: 1.1rem;
+}
+
+h5,h2 {
+    color: gainsboro;
+    
+}

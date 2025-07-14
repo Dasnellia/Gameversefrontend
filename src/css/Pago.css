@@ -1,0 +1,79 @@
+/* Contenedor principal */
+.perfil-pago-review {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 40px auto;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+/* Imagen del logo */
+.logo-img {
+    max-width: 200px;
+    border: 4px solid #ff0000;
+    border-radius: 12px;
+    padding: 8px;
+    background-color: #ffffff;
+}
+
+/* Título del disclaimer */
+.title-description {
+    font-size: 1.2rem;
+    color: #e50914;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+/* Texto del disclaimer */
+.description {
+    font-size: 0.9rem;
+    color: #cccccc;
+    line-height: 1.5;
+    background-color: #121212;
+    border-radius: 10px;
+    padding: 15px;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+/* Etiquetas del formulario */
+.form-label {
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+/* Inputs del formulario */
+.form-control {
+    background-color: #2c2c2c;
+    border: 1px solid #444;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 12px;
+    font-size: 1rem;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.form-control:focus {
+    border-color: #e50914;
+    box-shadow: 0 0 0 0.2rem rgba(229, 9, 20, 0.25);
+    background-color: #2c2c2c;
+    color: white;
+}
+
+/* Botón de proceder */
+.btn-proceed {
+    background-color: #e50914;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.btn-proceed:hover {
+    background-color: #b0060f;
+}

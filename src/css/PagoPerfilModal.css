@@ -1,0 +1,43 @@
+
+/* Fondo oscuro y borde redondeado */
+.modal-content {
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+/* Eliminar línea divisoria entre header y body */
+.modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* Botón de cerrar */
+.btn-close {
+    filter: invert(1);
+}
+
+/* Título del modal */
+.modal-body h5 {
+    color: #e50914;
+    font-size: 1.3rem;
+}
+
+/* Checkmark estilizado */
+.checkmark-box {
+    font-size: 3rem;
+    color: white;
+}
+
+/* Texto explicativo */
+.modal-body p {
+    color: #cccccc;
+    font-size: 1rem;
+}
+
+/* Quitar margen innecesario abajo del header */
+.modal-body {
+    padding-top: 0;
+}

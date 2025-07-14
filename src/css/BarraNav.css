@@ -1,0 +1,71 @@
+/* BarraNav.css */
+
+.game-verse-navbar {
+  background-color: #121212; /* Fondo oscuro elegante */
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid red;
+}
+
+.game-verse-navbar .navbar-brand {
+  color: white;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.game-verse-navbar .navbar-brand:hover {
+  color: red;
+}
+
+#barraBusquedaContainer input {
+  background-color: #2a2a2a;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+#barraBusquedaContainer input::placeholder {
+  color: #ccc;
+}
+
+#barraBusquedaContainer button {
+  background-color: red;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+#barraBusquedaContainer button:hover {
+  background-color: #cc0000;
+}
+
+.cuenta-texto {
+  margin-left: 0.5rem;
+}
+
+.game-verse-secondary-nav {
+  background-color: #1f1f1f;
+  padding: 0.5rem 0;
+  border-top: 1px solid #444;
+}
+
+.nav-link,
+.dropdown-toggle {
+  color: white !important;
+  font-weight: 500;
+}
+
+.nav-link:hover,
+.dropdown-toggle:hover {
+  color: red !important;
+}
+
+.bi-cart-fill {
+  margin-right: 0.25rem;
+  color: white;
+}
+
+#barraBusquedaContainer {
+  min-width: 300px;
+  max-width: 600px;
+}
+

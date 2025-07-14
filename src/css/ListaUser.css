@@ -1,0 +1,35 @@
+:root {
+  --primary-red: #d10000;
+  --dark-background: #1e1e1e;
+  --light-text: #ffffff;
+  --secondary-text: #cccccc;
+  --border-color: #333333;
+  --card-background: #2c2c2c;
+  --table-row-hover-background: #444444;
+}
+
+.main-content {
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+.card:hover {
+  border: 2px solid var(--primary-red); 
+}
+
+.user-photo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.user-table tbody td:nth-child(3) {
+  text-align: center;
+}
+
+.user-table tbody td:nth-child(4) {
+  text-align: center;
+}

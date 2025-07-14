@@ -1,0 +1,216 @@
+.registro-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.registro-container .form-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem; /* reducido */
+  background-color: rgba(0, 0, 0, 0.15);
+  justify-content: center;
+  align-items: center;
+}
+
+.registro-container .logo-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.6rem; /* reducido */
+  align-self: flex-start;
+  width: 100%;
+}
+
+.registro-container .logo-img {
+  height: 40px; /* reducido */
+  margin-right: 0.8rem; /* reducido */
+  object-fit: contain;
+}
+
+.registro-container .logo-title {
+  font-size: 1.44rem; /* reducido */
+  font-weight: 700;
+  color: #ff0000;
+  margin: 0;
+}
+
+.registro-container .form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+}
+
+.registro-container .registro-form {
+  width: 100%;
+  max-width: 360px; /* reducido */
+  padding: 1.6rem; /* reducido */
+  background-color: rgba(121, 115, 115, 0.918);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.registro-container .form-title {
+  font-size: 1.2rem; /* reducido */
+  font-weight: 600;
+  margin-bottom: 1.2rem; /* reducido */
+  color: #fffafa;
+  text-align: center;
+}
+
+.registro-container .registro-form .form-label {
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 0.875rem; /* reducido */
+}
+
+.registro-container .registro-form .form-control,
+.registro-container .registro-form .form-select {
+  padding: 8px; /* reducido */
+  border-radius: 4px; /* reducido */
+  border: 1px solid #ddd;
+  color: #ffffff;
+  background-color: #333;
+  width: 100%;
+  font-size: 0.875rem; /* reducido */
+}
+
+.registro-container .registro-form .form-control::placeholder,
+.registro-container .registro-form .form-select option {
+  color: #777;
+}
+
+.registro-container .registro-form .form-control:focus,
+.registro-container .registro-form .form-select:focus {
+  box-shadow: 0 0 0 0.2rem rgba(168, 82, 45, 0.25); /* reducido */
+  border-color: #ff6a00;
+  outline: none;
+}
+
+.registro-container .registro-form .form-text {
+  font-size: 0.7em; /* reducido */
+  color: #6c757d;
+}
+
+.registro-container .submit-btn {
+  width: 100%;
+  background-color: #ff0000;
+  color: white;
+  padding: 8px; /* reducido */
+  font-weight: 600;
+  border: none;
+  border-radius: 4px; /* reducido */
+  margin-top: 0.8rem; /* reducido */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 0.9rem; /* reducido */
+}
+
+.registro-container .submit-btn:hover {
+  background-color: #9c0500;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(168, 88, 45, 0.3);
+}
+
+.registro-container .image-section {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+
+.registro-container .background-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  animation: zoomInOut 5s ease-in-out infinite;
+}
+
+.registro-container .image-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  max-width: 80%;
+  z-index: 1;
+}
+
+.registro-container .image-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.registro-container .image-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.registro-container .back-to-login-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registro-container .back-to-login-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-decoration: none;
+  transform: scale(1.05);
+}
+
+@keyframes zoomInOut {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+@media (max-width: 992px) {
+  .registro-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .registro-container .image-section {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .registro-container .form-section {
+    padding: 0.8rem; /* reducido */
+  }
+
+  .registro-container .registro-form {
+    padding: 1.2rem; /* reducido */
+  }
+
+  .registro-container .image-section {
+    min-height: 300px;
+  }
+}

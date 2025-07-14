@@ -1,0 +1,209 @@
+:root {
+    --primary-red: #d10000;
+    --dark-background: #1e1e1e;
+    --light-text: #ffffff;
+    --secondary-text: #cccccc;
+    --border-color: #333333;
+    --card-background: #2c2c2c;
+    --table-row-hover-background: #444444;
+}
+
+.d-flex.vh-100 {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    flex-shrink: 0;
+}
+
+.content {
+    background-color: var(--dark-background);
+    color: var(--light-text);
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.display-5 {
+    color: var(--light-text);
+}
+
+.btn-outline-light {
+    color: var(--light-text);
+    border-color: var(--light-text);
+}
+
+.btn-outline-light:hover {
+    background-color: var(--primary-red);
+    color: var(--light-text);
+    border-color: var(--primary-red);
+}
+
+.card {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card:hover {
+    border: 2px solid var(--primary-red);
+}
+
+.user-table {
+    width: 100%;
+    margin-bottom: 0;
+    color: var(--light-text);
+    border-collapse: collapse;
+}
+
+.user-table thead th {
+    background-color: var(--primary-red);
+    border-bottom: 1px solid var(--border-color);
+    padding: 12px 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.user-table tbody tr {
+    background-color: var(--dark-background);
+}
+
+.user-table tbody td {
+    padding: 10px 15px;
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+    vertical-align: middle;
+    color: var(--light-text);
+}
+
+.user-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.user-table tbody tr:hover {
+    background-color: var(--table-row-hover-background);
+}
+
+.game-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Editar/Eliminar */
+.btn-warning,
+.btn-danger {
+    background-color: transparent;
+    border: none;
+    color: var(--light-text); 
+    padding: 0.25rem 0.5rem; 
+}
+
+.btn-warning:hover,
+.btn-danger:hover {
+    background-color: rgba(209, 0, 0, 0.2);
+    color: var(--primary-red); 
+    border: none; 
+}
+
+.modal-content {
+    background-color: var(--dark-background);
+    color: var(--light-text);
+    border: 1px solid var(--border-color);
+}
+
+.modal-header {
+    background-color: var(--dark-background);
+    color: var(--light-text);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    padding-top: 16px;
+}
+
+.modal-header .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+.modal-footer {
+    background-color: var(--dark-background);
+    border-top: 1px solid var(--border-color);
+}
+
+.modal-body {
+    padding-top: 15px;
+    padding-bottom: 16px;
+}
+
+.modal-body .form-control,
+.modal-body .form-select {
+    background-color: #333333 !important;
+    color: var(--light-text) !important;
+    border: 1px solid #444444 !important;
+}
+
+.modal-body .form-control::placeholder {
+    color: var(--light-text);
+    opacity: 0.7;
+}
+
+.modal-body input[type="date"] {
+    color-scheme: dark;
+}
+
+.modal-body input[type="date"]::-webkit-calendar-picker-indicator {
+    color: var(--light-text);
+    opacity: 1;
+}
+
+.form-label {
+    color: var(--light-text);
+}
+
+.modal-body .form-control:focus,
+.modal-body .form-select:focus {
+    background-color: #333333 !important;
+    color: var(--light-text) !important;
+    border-color: var(--primary-red) !important;
+    box-shadow: 0 0 0 0.25rem rgba(209, 0, 0, 0.25) !important;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #6c757d !important;
+    border-color: #6c757d !important;
+    color: var(--light-text) !important;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #5a6268 !important;
+    border-color: #545b62 !important;
+    color: var(--light-text) !important;
+}
+
+.modal-footer .btn-primary {
+    background-color: var(--primary-red) !important;
+    border-color: var(--primary-red) !important;
+    color: var(--light-text) !important;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #c82333 !important;
+    border-color: #bd2130 !important;
+    color: var(--light-text) !important;
+}
+
+.text-muted {
+    color: var(--secondary-text) !important;
+}

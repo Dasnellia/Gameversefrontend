@@ -1,0 +1,232 @@
+/* Perfil-pago-review.css */
+
+/* Sobreescritura de estilos */
+
+.negro{
+  color: #000000;
+}
+
+/* --- ESTILOS ESPECÍFICOS PARA EL COMPONENTE PERFIL --- */
+
+/* Contenedor principal del perfil */
+.perfil-box {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 18px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+  max-width: 1200px;
+  padding: 40px;
+  margin: 2rem auto;
+}
+
+/* Título de la sección de perfil */
+.perfil-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #000000;
+  text-align: center;
+  font-family: 'Sofia Sans', sans-serif;
+}
+
+/* Contenedor de la imagen de perfil */
+.perfil-image-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid rgba(246, 9, 9, 0.655);
+  cursor: pointer;
+  margin: 0 auto 2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.perfil-image-container:hover {
+  opacity: 0.8;
+}
+
+/* Texto dentro del placeholder de la imagen de perfil */
+.perfil-image-placeholder {
+  color: #333333;
+  text-align: center;
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 1.2rem;
+}
+
+/* Texto para cambiar la foto de perfil */
+.perfil-change-photo-text {
+  color: rgba(246, 9, 9, 0.655);
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-family: 'Sofia Sans', sans-serif;
+}
+
+.perfil-change-photo-text:hover {
+  color: rgba(200, 0, 0, 0.8);
+}
+
+/* Estilos para los elementos del formulario */
+.perfil-form-control {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 12px;
+  color: #000000;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  font-family: 'Sofia Sans', sans-serif;
+}
+
+.perfil-form-control:focus {
+  outline: none;
+  border-color: rgba(246, 9, 9, 0.655);
+  box-shadow: 0 0 0 0.25rem rgba(246, 9, 9, 0.2);
+}
+
+.perfil-form-control::placeholder {
+  color: #666666;
+}
+
+.perfil-form-label {
+  color: #000000;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  display: block;
+  font-family: 'Sofia Sans', sans-serif;
+}
+
+/* Botón de guardar cambios */
+.perfil-btn-save {
+  background-color: rgba(246, 9, 9, 0.655);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  display: inline-block;
+  font-family: 'Sofia Sans', sans-serif;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.perfil-btn-save:hover {
+  background-color: rgba(200, 0, 0, 0.8);
+}
+
+/* --- FIN DE ESTILOS ESPECÍFICOS PARA EL COMPONENTE PERFIL --- */
+
+/* --- ESTILOS ESPECÍFICOS PARA EL MODAL DE PERFIL --- */
+
+/* Estilos para el diálogo del modal */
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100% - (0.5rem * 2));
+  margin: 0.5rem auto;
+}
+
+/* Estilos para el contenido del modal */
+.modal-content {
+  background-color: rgba(255, 255, 255, 1);
+  color: #000000;
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+/* Estilos para la cabecera del modal */
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 1rem;
+  border-bottom: none;
+}
+
+/* Estilos para el cuerpo del modal */
+.modal-body {
+  padding-top: 0;
+  text-align: center;
+}
+
+/* Estilos para el recuadro del "checkmark" */
+.checkmark-box {
+  background-color: rgba(246, 9, 9, 0.655);
+  color: white;
+  font-size: 28px;
+  border-radius: 12px;
+  padding: 8px 16px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para el título del modal */
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-family: 'Sofia Sans', sans-serif;
+}
+
+/* Estilos para el texto del modal */
+.modal-text {
+  font-size: 1rem;
+  color: #333333;
+  font-family: 'Sofia Sans', sans-serif;
+  margin-bottom: 1rem;
+}
+
+/* --- FIN DE ESTILOS ESPECÍFICOS PARA EL MODAL DE PERFIL --- */
+
+/* Estilos generales */
+.box {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 18px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+  max-width: 1200px;
+  padding: 40px;
+  margin: 2rem auto;
+
+  display: flex;
+  align-items: center;
+  height: 90vh;
+}
+
+.title-description {
+  font-size: 0.9rem;
+  color: #333333;
+  font-family: 'Sofia Sans', sans-serif;
+}
+
+.description {
+  font-size: 0.6rem;
+  color: #333333;
+  font-family: 'Sofia Sans', sans-serif;
+}
+
+/* Estilos específicos para la sección de pago */
+.btn-proceed {
+  background-color: rgba(246, 9, 9, 0.655);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  display: inline-block;
+  font-family: 'Sofia Sans', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.btn-proceed:hover {
+  background-color: rgba(200, 0, 0, 0.8);
+}
+
+.logo-img {
+  max-width: 350px;
+  height: auto;
+}

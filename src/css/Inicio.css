@@ -1,0 +1,340 @@
+#inicio-page-container {
+    --primary-color: #d10000;
+    --dark-color: #121212;
+    --light-dark: #1e1e1e;
+    --text-light: #f8f9fa;
+    --text-muted: #fdfdfd1e;
+
+    background-color: var(--dark-color);
+    color: var(--text-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#inicio-page-container .navbar.bg-dark {
+    background-color: var(--dark-color) !important;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+
+#inicio-page-container .navbar-brand img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+}
+
+#inicio-page-container .navbar.bg-dark .btn-outline-light {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+#inicio-page-container .navbar.bg-dark .btn-outline-light i {
+    font-size: 0.85rem;
+}
+
+#inicio-page-container #barraBusquedaContainer .form-control {
+    background-color: #333 !important;
+    border: 1px solid #444;
+    color: var(--text-light) !important;
+}
+
+#inicio-page-container #barraBusquedaContainer .form-control::placeholder {
+    color: #bbb !important;
+}
+
+#inicio-page-container #barraBusquedaContainer .form-control:focus {
+    background-color: #444 !important;
+    border-color: var(--primary-color);
+    color: var(--text-light) !important;
+    box-shadow: 0 0 0 0.25rem rgba(209, 0, 0, 0.25);
+}
+
+#inicio-page-container .btn-outline-light {
+    color: var(--text-light);
+    border-color: var(--text-light);
+    transition: all 0.3s ease;
+}
+
+#inicio-page-container .btn-outline-light:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+#inicio-page-container .list-group.position-absolute {
+    top: 100%;
+    left: 0;
+    width: calc(100% - 2px);
+    margin-top: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-top: none;
+    border-radius: 0 0 0.25rem 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    background-color: var(--light-dark);
+    border-color: #444;
+}
+
+#inicio-page-container .list-group-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: var(--light-dark);
+    color: var(--text-light);
+    border-bottom: 1px solid #333;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#inicio-page-container .list-group-item:last-child {
+    border-bottom: none;
+}
+
+#inicio-page-container .list-group-item:hover {
+    background-color: #2a2a2a;
+    color: var(--primary-color);
+}
+
+#inicio-page-container .navbar.bg-light {
+    background-color: var(--light-dark) !important;
+    border-bottom: 1px solid #333;
+    padding-top: 0.3rem !important;
+    padding-bottom: 0.3rem !important;
+}
+
+#inicio-page-container .nav-link,
+#inicio-page-container .dropdown-item {
+    color: var(--text-light) !important;
+    transition: color 0.3s ease;
+}
+
+#inicio-page-container .navbar.bg-light .nav-link,
+#inicio-page-container .navbar.bg-light .dropdown-toggle {
+    padding-top: 0.4rem !important;
+    padding-bottom: 0.4rem !important;
+    font-size: 0.9rem;
+}
+
+#inicio-page-container .nav-link:hover,
+#inicio-page-container .dropdown-item:hover {
+    color: var(--primary-color) !important;
+}
+
+#inicio-page-container .dropdown-menu {
+    background-color: var(--light-dark);
+    border: 1px solid #333;
+}
+
+#inicio-page-container .dropdown-toggle {
+    background-color: transparent !important;
+    color: var(--text-light) !important;
+    border: none;
+    box-shadow: none !important;
+    transition: color 0.3s ease;
+}
+
+#inicio-page-container .dropdown-toggle:hover {
+    color: var(--primary-color) !important;
+}
+
+#inicio-page-container .nav-item .bi-cart-fill {
+    font-size: 0.9rem;
+    margin-left: -5%;
+    vertical-align: bottom;
+}
+
+#inicio-page-container .nav-item .nav-link[to="/Carrito"] {
+    font-size: 0.09rem;
+}
+
+#inicio-page-container .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.75) !important;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: var(--text-light);
+}
+
+#inicio-page-container .carousel-caption h5 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+#inicio-page-container .page-title {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+#inicio-page-container .card {
+    background-color: var(--light-dark);
+    border: 1px solid #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-light);
+}
+
+#inicio-page-container .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(209, 0, 0, 0.2);
+    border-color: var(--primary-color);
+}
+
+#inicio-page-container .card-title {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+#inicio-page-container .card-text {
+    color: var(--text-light);
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+#inicio-page-container .card-img-top.game-cover {
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #333;
+}
+
+#inicio-page-container .discount-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 1;
+    font-size: 0.9rem;
+}
+
+#inicio-page-container .platform-badge {
+    font-size: 0.75rem;
+    margin-right: 0.4rem;
+    margin-bottom: 0.4rem;
+    padding: 0.3em 0.6em;
+    background-color: #555 !important;
+    color: var(--text-light);
+    border-radius: 0.25rem;
+}
+
+#inicio-page-container .rating {
+    color: #ffc107;
+    font-size: 1.1rem;
+}
+
+#inicio-page-container .price {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    display: block;
+}
+
+#inicio-page-container .old-price {
+    text-decoration: line-through;
+    color: #999 !important;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+}
+
+#inicio-page-container .card-footer {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid #fafafa;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: auto;
+}
+
+#inicio-page-container .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+#inicio-page-container .btn-primary:hover {
+    background-color: #b00000;
+    border-color: #b00000;
+}
+
+#inicio-page-container .btn-secondary {
+    background-color: #333;
+    border-color: #333;
+    transition: all 0.3s ease;
+}
+
+#inicio-page-container .btn-secondary:hover {
+    background-color: #444;
+    border-color: #444;
+}
+
+#inicio-page-container .text-muted {
+    color: var(--text-muted) !important;
+}
+
+#inicio-page-container .filter-section {
+    background-color: var(--light-dark);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    border: 1px solid #333;
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+    z-index: 1020;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#inicio-page-container .filter-section h5 {
+    color: var(--text-light) !important;
+    margin-bottom: 10px !important;
+    font-size: 1.2rem;
+}
+
+#inicio-page-container .filter-section label {
+    color: var(--text-light) !important;
+    font-size: 0.9rem;
+}
+
+#inicio-page-container .filter-section .form-control-sm {
+    background-color: #495057 !important;
+    color: var(--text-light) !important;
+    border-color: #6c757d !important;
+}
+
+#inicio-page-container .filter-section .form-control-sm::placeholder {
+    color: #adb5bd !important;
+}
+
+#inicio-page-container .filter-section .btn-primary {
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+    border-color: var(--primary-color) !important;
+}
+
+#inicio-page-container .filter-section .btn-primary:hover {
+    background-color: #940404 !important;
+    border-color: #b00000 !important;
+}
+
+#inicio-page-container .filter-section .btn-secondary {
+    background-color: #495057 !important;
+    color: #fff !important;
+    border-color: #495057 !important;
+}
+
+#inicio-page-container .filter-section .btn-secondary:hover {
+    background-color: #2b2f38 !important;
+    border-color: #363a45 !important;
+}

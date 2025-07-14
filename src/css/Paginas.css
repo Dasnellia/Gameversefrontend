@@ -1,0 +1,248 @@
+/* Estilos base comunes */
+.fondo-principal {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #000000, #1a1a1a, #111111);
+  background-size: 150px 150px;
+  animation: animacion-fondo 100s ease infinite;
+}
+
+.registro-container {
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #0c080800; /* Fondo sólido para registro */
+  background: linear-gradient(135deg, #000000, #1a1a1a, #111111);
+}
+
+/* Animaciones */
+@keyframes animacion-fondo {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes zoomInOut {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Resto del CSS permanece igual */
+.logo-header, .d-flex.align-items-center.mb-4 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.logo-principal {
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.logo-img {
+  height: 80px !important;
+  margin-right: 1rem;
+}
+
+.logo-title, #titulo-logo {
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d32f2f;
+  margin: 0;
+}
+
+/* Contenedores de formulario */
+#formulario-login, .registro-form {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(231, 63, 63, 0.795);
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Títulos de formulario */
+#titulo-principal, .form-title {
+  font-family: 'Sofia Sans', sans-serif;
+  color: #d32f2f;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Campos de formulario comunes */
+.input-group-text {
+  background-color: transparent;
+  border-right: none;
+}
+
+.form-control, .form-select {
+  border-left: none;
+  padding: 12px 15px;
+  background-color: #9b82823b !important;
+  color: #000000 !important;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.form-control:focus, .form-select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+  border-color: #d32f2f;
+}
+
+/* Botones principales */
+#boton-iniciar-sesion, .submit-btn {
+  background-color: #d32f2f;
+  border: none;
+  padding: 12px;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+#boton-iniciar-sesion:hover, .submit-btn:hover {
+  background-color: #b71c1c;
+  transform: translateY(-2px);
+}
+
+/* Estilos específicos para Iniciar Sesión */
+#correo-principal, #fila-contraseña h4 {
+  font-family: 'Sofia Sans', sans-serif;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+#fila-contraseña {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+#fila-crear-cuenta {
+  font-family: 'Sofia Sans', sans-serif;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+#fila-crear-cuenta button {
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+#fila-crear-cuenta button:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+/* Estilos específicos para Registro */
+.registro-container {
+  flex-direction: row;
+  width: 100vw;
+}
+
+.form-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centra horizontalmente */
+  padding: 2rem;
+  background: linear-gradient(135deg, #000000, #1a1a1a, #111111);
+}
+
+.image-section {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: zoomInOut 5s ease-in-out infinite;
+}
+
+.background-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  animation: zoomInOut 5s ease-in-out infinite;
+}
+
+.btn1 {
+  background-color: #0c080800;
+  border: #0c080800;
+}
+
+.image-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  max-width: 80%;
+}
+
+.image-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.image-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.back-to-login-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.back-to-login-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.form-label {
+  color: #000000;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .registro-container {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .image-section {
+    min-height: 400px;
+  }
+  
+  #formulario-login, .registro-form {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+}

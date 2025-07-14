@@ -1,0 +1,135 @@
+:root {
+    --primary-color: #d10000;
+    --dark-color: #121212;
+    --light-dark: #1e1e1e;
+    --text-light: #f8f9fa;
+    --text-muted: #adb5bd;
+}
+
+body {
+    background-color: var(--text-light); 
+    color: var(--text-light); 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    margin: 0; 
+    padding: 0; 
+}
+
+#sidebar {
+    background-color: #1c1a1a;
+    padding-top: 20px;
+    transition: width 0.3s ease; 
+    width: 160px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    z-index: 1000;
+}
+
+.sidebar.collapsed {
+    width: 80px; 
+    align-items: center;
+}
+
+.sidebar-header {
+    padding: 20px;
+    border-bottom: 1px solid #333;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    position: relative;
+    padding-bottom: 10px; 
+}
+
+.logo-principal {
+    width: auto;
+    height: 4em; 
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+    transition: height 0.3s ease, margin 0.3s ease; 
+}
+
+.sidebar.collapsed .logo-principal {
+    height: 2.5em; 
+    margin-left: 0; 
+    margin-right: 0;
+}
+
+
+.sidebar-header span {
+    font-size: 1.1rem;
+    white-space: nowrap;
+    color: var(--text-light); 
+    transition: opacity 0.3s ease; 
+}
+
+/* Oculta "Admin" */
+.sidebar.collapsed .sidebar-header span {
+    opacity: 0; 
+    pointer-events: none; 
+}
+
+.sidebar > .flex-grow-1 {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    overflow-y: auto; 
+    width: 100%;
+}
+
+.sidebar .nav-item {
+    margin-bottom: 5px; 
+}
+
+.sidebar .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px; 
+    text-decoration: none;
+}
+
+/* Estilos para los iconos */
+.sidebar .nav-link i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.sidebar .nav-item {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el botÃ³n flecha*/
+.toggle-btn {
+    background: var(--light-dark); 
+    border: 1px solid #333;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute; 
+    right: -15px; 
+    top: 50%; 
+    color: var(--text-light);
+    font-size: 1rem; 
+    z-index: 1001; 
+}
+
+.toggle-btn:hover {
+    background-color: var(--primary-color); 
+}
+
+.sidebar hr {
+    border-color: #333; 
+    margin: 15px 0; 
+}
+
+p {
+    color: var(--text-light); 
+}
+
+h5 {
+    color: var(--text-light); 
+}

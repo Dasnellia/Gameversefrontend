@@ -1,0 +1,160 @@
+/* src/css/MasVendidos.css */
+
+#mas-vendidos-page-container {
+    --primary-color: #d10000;
+    --dark-color: #121212;
+    --light-dark: #1e1e1e;
+    --text-light: #f8f9fa;
+    --text-muted-filter: #bbb; /* Usado para texto más tenue en filtros/precios */
+    --input-bg: #333;
+    --input-border: #444;
+
+    background-color: var(--dark-color);
+    color: var(--text-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-title {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.filter-section h4 {
+    color: var(--text-light) !important;
+}
+
+.form-select,
+.input-group .form-control {
+    background-color: var(--input-bg) !important;
+    color: var(--text-light) !important;
+    border-color: var(--input-border) !important;
+}
+
+.form-select::placeholder,
+.input-group .form-control::placeholder {
+    color: var(--text-muted-filter) !important;
+}
+
+.form-select:focus,
+.input-group .form-control:focus {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 0.25rem rgba(209, 0, 0, 0.25);
+}
+
+.input-group-text {
+    background-color: var(--primary-color) !important;
+    color: var(--text-light) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.table.table-dark {
+    background-color: var(--light-dark) !important;
+    color: var(--text-light) !important;
+    border-color: #444 !important;
+}
+
+.table.table-hover tbody tr:hover {
+    background-color: rgba(209, 0, 0, 0.2) !important;
+}
+
+.table th,
+.table td {
+    border-color: #333 !important;
+    vertical-align: middle;
+}
+
+.table thead th {
+    color: var(--primary-color);
+}
+
+.game-cover {
+    width: 60px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.badge.platform-badge {
+    font-size: 0.75rem;
+    margin-right: 0.4rem;
+    margin-bottom: 0.4rem;
+    padding: 0.3em 0.6em;
+    background-color: #555 !important;
+    color: var(--text-light);
+    border-radius: 0.25rem;
+}
+
+.rating {
+    color: #ffc107;
+}
+
+.rating .text-muted {
+    color: var(--text-muted-filter) !important;
+}
+
+.price {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.5 !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: var(--text-light) !important;
+}
+
+.btn-primary:hover {
+    background-color: #a00000 !important;
+    border-color: #a00000 !important;
+}
+
+.btn-secondary {
+    background-color: #6c757d !important;
+    border-color: #6c757d !important;
+    color: var(--text-light) !important;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268 !important;
+    border-color: #5a6268 !important;
+}
+
+.pagination .page-item .page-link {
+    background-color: var(--light-dark) !important;
+    border-color: #333 !important;
+    color: var(--text-light) !important;
+    transition: all 0.3s ease;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: var(--text-light) !important;
+}
+
+.pagination .page-item .page-link:hover {
+    background-color: rgba(209, 0, 0, 0.5) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.pagination .page-item.disabled .page-link {
+    background-color: #2a2a2a !important;
+    border-color: #3a3a3a !important;
+    color: #888 !important;
+}

@@ -1,0 +1,295 @@
+#catalogo-page-container {
+    --primary-color: #d10000;
+    --dark-color: #121212;
+    --light-dark: #1e1e1e;
+    --text-light: #f8f9fa;
+    --text-muted: #fdfdfd1e;
+
+    background-color: var(--dark-color);
+    color: var(--text-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#catalogo-page-container .navbar.navbar-dark.bg-dark {
+    background-color: var(--dark-color) !important;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+#catalogo-page-container .navbar.navbar-light.bg-light {
+    background-color: var(--light-dark) !important;
+    border-bottom: 1px solid #333;
+    padding-top: 0.3rem !important;
+    padding-bottom: 0.3rem !important;
+}
+
+#catalogo-page-container .nav-link,
+#catalogo-page-container .dropdown-item {
+    color: var(--text-light) !important;
+    transition: color 0.3s ease;
+}
+
+#catalogo-page-container .nav-link:hover,
+#catalogo-page-container .dropdown-item:hover {
+    color: var(--primary-color) !important;
+}
+
+#catalogo-page-container .dropdown-menu {
+    background-color: var(--light-dark);
+    border: 1px solid #333;
+}
+
+/* Estilos para el logo y la marca */
+#catalogo-page-container .navbar-brand img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+}
+
+/* Estilos específicos para botones btn-outline-light en la navbar oscura */
+#catalogo-page-container .navbar.bg-dark .btn-outline-light {
+    padding: 0.3rem 0.6rem !important;
+    font-size: 0.85rem !important;
+    line-height: 1.5 !important;
+}
+
+#catalogo-page-container .navbar.bg-dark .btn-outline-light i {
+    font-size: 0.85rem !important;
+}
+
+/* Asegurar que los estilos generales de btn-outline-light no sean más específicos */
+#catalogo-page-container .btn-outline-light {
+    color: var(--text-light);
+    border-color: var(--text-light);
+    transition: all 0.3s ease;
+}
+
+#catalogo-page-container .btn-outline-light:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+#catalogo-page-container .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+#catalogo-page-container .btn-primary:hover {
+    background-color: #b00000;
+    border-color: #b00000;
+}
+
+#catalogo-page-container .btn-secondary {
+    background-color: #333;
+    border-color: #333;
+}
+
+#catalogo-page-container .btn-secondary:hover {
+    background-color: #444;
+    border-color: #444;
+}
+
+#catalogo-page-container .card {
+    background-color: var(--light-dark);
+    border: 1px solid #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#catalogo-page-container .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(209, 0, 0, 0.2);
+    border-color: var(--primary-color);
+}
+
+#catalogo-page-container .card-title {
+    color: var(--primary-color);
+}
+
+#catalogo-page-container .card-footer {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid #fafafa;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: auto;
+}
+
+#catalogo-page-container .card-text {
+    color: var(--text-light);
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+#catalogo-page-container .card-img-top {
+    width: 100%;
+    overflow: hidden;
+}
+
+#catalogo-page-container .game-cover {
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #333;
+}
+
+/* Estilos de la barra de búsqueda */
+#catalogo-page-container #barraBusquedaContainer .form-control {
+    background-color: #333 !important;
+    border: 1px solid #444;
+    color: var(--text-light) !important;
+    flex-grow: 1;
+}
+
+#catalogo-page-container .form-control::placeholder {
+    color: #bbb !important;
+}
+
+#catalogo-page-container #barraBusquedaContainer .form-control:focus {
+    background-color: #444 !important;
+    border-color: var(--primary-color);
+    color: var(--text-light) !important;
+    box-shadow: 0 0 0 0.25rem rgba(209, 0, 0, 0.25);
+}
+
+#catalogo-page-container .price {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    display: block;
+}
+
+#catalogo-page-container .platform-badge {
+    font-size: 0.75rem;
+    margin-right: 0.4rem;
+    margin-bottom: 0.4rem;
+    padding: 0.3em 0.6em;
+    background-color: #555 !important;
+    color: var(--text-light);
+    border-radius: 0.25rem;
+}
+
+#catalogo-page-container .discount-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 1;
+    font-size: 0.9rem;
+}
+
+#catalogo-page-container .filter-section {
+    background-color: var(--light-dark);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    border: 1px solid #333;
+}
+
+#catalogo-page-container .page-title {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+#catalogo-page-container .rating {
+    color: #ffc107;
+}
+
+#catalogo-page-container .old-price {
+    text-decoration: line-through;
+    color: #999 !important;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+}
+
+#catalogo-page-container .text-muted {
+    color: var(--text-muted) !important;
+}
+
+#catalogo-page-container .filtro-lateral {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+    z-index: 1020;
+    background-color: var(--light-dark);
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#catalogo-page-container .filtro-lateral h5 {
+    color: var(--text-light) !important;
+    margin-bottom: 10px !important;
+    font-size: 1.2rem;
+}
+
+#catalogo-page-container .filtro-lateral label {
+    color: var(--text-light) !important;
+    font-size: 0.9rem;
+}
+
+/* AÑADIDO/MODIFICADO: Estilos para todos los controles de formulario (input, select) dentro del filtro */
+#catalogo-page-container .filtro-lateral .form-control,
+#catalogo-page-container .filter-section .form-control,
+#catalogo-page-container .filtro-lateral .form-select,
+#catalogo-page-container .filter-section .form-select {
+    background-color: #333 !important;
+    border: 1px solid #444 !important;
+    color: var(--text-light) !important;
+}
+#catalogo-page-container .filtro-lateral .form-control::placeholder,
+#catalogo-page-container .filter-section .form-control::placeholder {
+    color: #bbb !important;
+}
+
+/* AÑADIDO/MODIFICADO: Estilos para checkboxes y radio buttons */
+#catalogo-page-container .form-check-input {
+    background-color: #333 !important; /* Fondo oscuro por defecto para no marcados */
+    border-color: #444 !important;    /* Borde oscuro por defecto para no marcados */
+}
+#catalogo-page-container .form-check-input:checked {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+#catalogo-page-container .form-check-input:focus {
+    border-color: var(--primary-color) !important; /* Consistencia en el color al enfocar */
+    box-shadow: 0 0 0 0.25rem rgba(209, 0, 0, 0.25) !important;
+}
+
+
+#catalogo-page-container .portada-juego {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#catalogo-page-container .rc-slider-track {
+    background-color: red;
+}
+
+#catalogo-page-container .rc-slider-handle {
+    border-color: red;
+    background-color: red;
+}
+
+#catalogo-page-container .new-price {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.1rem;
+}

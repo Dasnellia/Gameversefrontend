@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+
+.fondo-principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #000000, #1a1a1a, #111111);
+  background-size: 150px 150px;
+  animation: animacion-fondo 100s ease infinite;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@keyframes animacion-fondo {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#logo-principal {
+  margin-bottom: 3.5rem;
+  text-align: center;
+}
+
+#logo-principal img {
+  width: 80px;
+  height: 80px;
+  filter: drop-shadow(2px 2px 2px rgba(229, 9, 20, 0.7));
+}
+
+#titulo-logo {
+  font-family: 'Russo One', sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #e50914;
+  text-shadow: 2px 2px 0 #730000,
+               4px 4px 0 #551111;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#formulario-login {
+  background: #2c2c2c;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(229, 9, 20, 0.5);
+  padding: 40px;
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.4);
+  color: #eee;
+}
+
+#titulo-principal {
+  font-family: 'Source Sans 3', sans-serif;
+  color: #e50914;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  margin-top: -10px;
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+
+#correo-principal,
+#fila-contraseña h4 {
+  font-family: 'Sofia Sans', sans-serif;
+  color: #ddd;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#fila-contraseña {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.olvidaste-contrasena,
+.crear-cuenta-enlace {
+  font-size: 0.9em;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  font-family: 'Sofia Sans', sans-serif;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  display: inline;
+  outline: none;
+}
+
+.olvidaste-contrasena:hover,
+.crear-cuenta-enlace:hover {
+  text-decoration: underline;
+  color: #f0f0f0;
+}
+
+.input-group-text {
+  background-color: #3a3a3a;
+  border: 1px solid #551111;
+  border-right: none;
+  color: #e50914;
+  padding: 0.375rem 0.75rem;
+  display: flex;
+  align-items: center;
+  cursor: default;
+}
+
+#grupo-usuario .input-group-text,
+#grupo-contraseña .input-group-text{
+  color: #e50914;
+  font-size: 1.25rem;
+}
+
+.bi-person-circle, .bi-eye-fill{
+  color: white;
+  font-size: 1.25rem;
+}
+
+#grupo-contraseña .input-group-text .bi-eye-fill {
+  cursor: pointer;
+}
+
+#formulario-login .input-group .form-control {
+  color: #eee;
+  background-color: #3a3a3a;
+  border: 1px solid #551111;
+  border-left: none;
+}
+
+#formulario-login .input-group .form-control::placeholder {
+  color: #b17d7d;
+}
+
+#formulario-login .input-group .form-control:focus {
+  color: #fff;
+  background-color: #4a1a1a;
+  border-color: #e50914;
+  box-shadow: 0 0 0 0.25rem rgba(229, 9, 20, 0.4);
+  outline: none;
+}
+
+.me-2 {
+  color: #e50914;
+}
+
+#boton-iniciar-sesion {
+  background-color: #e50914;
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  width: 100%;
+  cursor: pointer;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(229, 9, 20, 0.5);
+}
+
+#boton-iniciar-sesion:hover {
+  background-color: #b71c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(183, 28, 28, 0.7);
+}
+
+#fila-crear-cuenta {
+  text-align: center;
+  margin-top: 40px;
+  font-family: 'Sofia Sans', sans-serif;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  #formulario-login {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  #logo-principal img {
+    width: 60px;
+    height: 60px;
+  }
+
+  #titulo-logo {
+    font-size: 2.2rem;
+  }
+
+  #titulo-principal {
+    font-size: 1.8rem;
+  }
+}

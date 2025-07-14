@@ -1,0 +1,199 @@
+#mejor-valorados-page-container {
+    --primary-color: #d10000;
+    --dark-color: #121212;
+    --light-dark: #1e1e1e;
+    --text-light: #f8f9fa;
+    --text-muted: #fdfdfd1e;
+
+    background-color: var(--dark-color);
+    color: var(--text-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#mejor-valorados-page-container .navbar.navbar-dark.bg-dark {
+    background-color: var(--dark-color) !important;
+    border-bottom: 1px solid var(--primary-color);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#mejor-valorados-page-container .navbar.navbar-light.bg-light {
+    background-color: var(--light-dark) !important;
+    border-bottom: 1px solid #333;
+    padding-top: 0.3rem !important;
+    padding-bottom: 0.3rem !important;
+}
+
+#mejor-valorados-page-container .nav-link,
+#mejor-valorados-page-container .dropdown-item {
+    color: var(--text-light) !important;
+    transition: color 0.3s ease;
+}
+
+#mejor-valorados-page-container .nav-link:hover,
+#mejor-valorados-page-container .dropdown-item:hover {
+    color: var(--primary-color) !important;
+}
+
+#mejor-valorados-page-container .dropdown-menu {
+    background-color: var(--light-dark);
+    border: 1px solid #333;
+}
+
+#mejor-valorados-page-container .dropdown-toggle.nav-link {
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+}
+
+#mejor-valorados-page-container .navbar-brand img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+}
+
+#mejor-valorados-page-container .btn-outline-light {
+    color: var(--text-light);
+    border-color: var(--text-light);
+    transition: all 0.3s ease;
+}
+
+#mejor-valorados-page-container .btn-outline-light:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+/* NUEVAS REGLAS para asegurar el tamaño de los botones pequeños (btn-sm) */
+#mejor-valorados-page-container .btn-sm {
+    padding: 0.25rem 0.5rem !important;
+    font-size: 0.875rem !important; /* Tamaño de fuente estándar para btn-sm */
+    line-height: 1.5 !important; /* Ajuste para alineación vertical */
+}
+
+/* Reducir el tamaño del icono de Mi Cuenta si es necesario */
+#mejor-valorados-page-container .btn-outline-light.btn-sm .bi-person-fill {
+    font-size: 0.9em !important; /* Ligeramente más pequeño que el texto del botón */
+    vertical-align: middle; /* Ayuda a centrarlo verticalmente */
+}
+
+#mejor-valorados-page-container #barraBusquedaContainer .form-control {
+    background-color: #333 !important;
+    border: 1px solid #444;
+    color: var(--text-light) !important;
+    flex-grow: 1;
+}
+
+#mejor-valorados-page-container #barraBusquedaContainer .form-control::placeholder {
+    color: #bbb !important;
+}
+
+#mejor-valorados-page-container #barraBusquedaContainer .form-control:focus {
+    background-color: #444 !important;
+    border-color: var(--primary-color);
+    color: var(--text-light) !important;
+    box-shadow: 0 0 0 0.25rem rgba(209, 0, 0, 0.25);
+}
+
+#mejor-valorados-page-container .page-title {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+#mejor-valorados-page-container .card {
+    background-color: var(--light-dark);
+    border: 1px solid #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#mejor-valorados-page-container .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(209, 0, 0, 0.2);
+    border-color: var(--primary-color);
+}
+
+#mejor-valorados-page-container .card-title {
+    color: var(--primary-color);
+}
+
+#mejor-valorados-page-container .card-text {
+    color: var(--text-light);
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+#mejor-valorados-page-container .card-img-top {
+    width: 100%;
+    overflow: hidden;
+}
+
+#mejor-valorados-page-container .game-cover {
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #333;
+}
+
+#mejor-valorados-page-container .card-footer {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid #fafafa;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: auto;
+}
+
+#mejor-valorados-page-container .price {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    display: block;
+}
+
+#mejor-valorados-page-container .old-price {
+    text-decoration: line-through;
+    color: #999 !important;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+}
+
+#mejor-valorados-page-container .discount-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 1;
+    font-size: 0.9rem;
+}
+
+#mejor-valorados-page-container .platform-badge {
+    font-size: 0.75rem;
+    margin-right: 0.4rem;
+    margin-bottom: 0.4rem;
+    padding: 0.3em 0.6em;
+    background-color: #555 !important;
+    color: var(--text-light);
+    border-radius: 0.25rem;
+}
+
+#mejor-valorados-page-container .rating {
+    color: #ffc107;
+}
+
+#mejor-valorados-page-container .nav-link .bi-cart-fill {
+    font-size: 0.9em;
+}
