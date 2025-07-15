@@ -32,7 +32,6 @@ const ListadoNoticias = () => {
 
   const { usuario } = useUser();
 
-  // 🔒 Protección por autenticación y rol
   useEffect(() => {
     if (usuario && usuario.tipo === 'admin') {
       cargarNoticias();
@@ -44,7 +43,7 @@ const ListadoNoticias = () => {
       const noticias = await listarNoticias();
       setDatosNoticias(noticias);
     } catch (err) {
-      console.error('❌ Error al cargar noticias:', err);
+      console.error('Error al cargar noticias:', err);
     }
   };
 
@@ -87,7 +86,7 @@ const ListadoNoticias = () => {
       await cargarNoticias();
       handleCerrarEliminarModal();
     } catch (err) {
-      console.error('❌ Error al eliminar noticia:', err);
+      console.error('Error al eliminar noticia:', err);
     }
   };
 
@@ -104,7 +103,7 @@ const ListadoNoticias = () => {
     handleCerrarAgregarModal();
   };
 
-  if (!usuario || usuario.tipo?.toLowerCase() !== "admin") { // Added ?. for safety if usuario.tipo somehow missing
+  if (!usuario || usuario.tipo?.toLowerCase() !== "admin") { 
     return (
       <div className="d-flex vh-100">
         <NavBarra />

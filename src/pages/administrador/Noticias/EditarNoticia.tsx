@@ -7,7 +7,7 @@ import type { DetalleNoticia } from '../Noticias/ListadoNoticias';
 interface EditarNoticiaProps {
   noticiaActual: DetalleNoticia | null;
   onCerrar: () => void;
-  onGuardar: () => void; // recarga noticias después de guardar
+  onGuardar: () => void; 
   show: boolean;
 }
 
@@ -51,10 +51,10 @@ const EditarNoticia: React.FC<EditarNoticiaProps> = ({ noticiaActual, onCerrar, 
         return;
       }
 
-      await editarNoticia(noticiaActual.id, formData); // ✅ peticion real
+      await editarNoticia(noticiaActual.id, formData); 
       setError(null);
-      onGuardar(); // recarga lista
-      onCerrar();  // cierra modal
+      onGuardar(); 
+      onCerrar(); 
     } catch (err) {
       setError('Error al editar la noticia.');
     }

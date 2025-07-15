@@ -5,7 +5,7 @@ export interface CarritoItem {
   nombre: string;
   precio?: number;
   cantidad: number;
-  imagen?: string; // Esta imagen ya viene como URL completa desde la BD
+  imagen?: string;
 }
 
 interface DetalleCarritoProps {
@@ -20,7 +20,7 @@ function DetalleCarrito({ item, onIncrementar, onDecrementar, onEliminar }: Deta
     <div className="detalle-carrito-card">
       <div className="detalle-carrito-imagen">
         <img
-          src={item.imagen || 'https://via.placeholder.com/100'} // Fallback en caso de imagen vacía
+          src={item.imagen || 'https://via.placeholder.com/100'} 
           alt={item.nombre}
           className="detalle-carrito-img"
           style={{ width: '100px', height: '100px', objectFit: 'cover' }}

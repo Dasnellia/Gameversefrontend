@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import '../../css/BarraCarrito.css';
 import { Link } from 'react-router-dom';
-import type { CarritoItem } from '../carrito/DetalleCarrito'; // <-- o desde utils/carrito.ts si lo mueves
+import type { CarritoItem } from '../carrito/DetalleCarrito'; 
 
 const BarraCarrito = () => {
   const [isVisible, setIsVisible] = useState(false);

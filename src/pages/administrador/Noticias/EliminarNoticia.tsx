@@ -2,7 +2,7 @@ import React from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import '../../../css/EliminarNoticia.css'; 
 
-// Estructura Eliminar Noticia
+// Estructura 
 interface EliminarNoticiaProps {
   noticiaId: number; 
   nombreNoticia: string; 

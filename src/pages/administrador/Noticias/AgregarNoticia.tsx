@@ -16,7 +16,7 @@ const AgregarNoticia: React.FC<AgregarNoticiaProps> = ({ onCerrar, onAgregar, sh
   const [foto, setFoto] = useState<File | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  const { usuario: _usuario } = useUser(); // Solo para validar si está autenticado (opcional)
+  const { usuario: _usuario } = useUser(); 
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -32,13 +32,13 @@ const AgregarNoticia: React.FC<AgregarNoticiaProps> = ({ onCerrar, onAgregar, sh
       formData.append('descripcion', descripcion);
       formData.append('foto', foto);
 
-      await crearNoticia(formData); // ✅ sin token, solo cookies
+      await crearNoticia(formData);
       setName('');
       setDescripcion('');
       setFoto(null);
       setError(null);
-      onAgregar(); // Actualiza lista
-      onCerrar();  // Cierra modal
+      onAgregar();
+      onCerrar(); 
     } catch (err) {
       setError('Error al crear la noticia. Intente nuevamente.');
     }
